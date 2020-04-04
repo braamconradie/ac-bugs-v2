@@ -1,0 +1,287 @@
+// Chatbot's brain
+! version = 2.0
+
+// ! var num = 37555
+
++ set #
+- <set num=<star>>
+
++ #
+* <star> > <get num> => pick a lower number
+* <star> < <get num> => pick a higher number
+* <star> == <get num> => you got it!
+
++ *
+- Sorry can't help with that
+
++ tell me a poem
+- Little Miss Muffit sat on her tuffet,\n
+^ In a nonchalant sort of way.\n
+^ With her forcefield around her,\n
+^ The Spider, the bounder,\n
+^ Is not in the picture today.
+
+// Substitutions
+! sub i'm     = i am
+! sub i'd     = i would
+! sub i've    = i have
+! sub i'll    = i will
+! sub don't   = do not
+! sub isn't   = is not
+! sub you'd   = you would
+! sub you're  = you are
+! sub you've  = you have
+! sub you'll  = you will
+! sub what's  = what is
+! sub whats   = what is
+! sub what're = what are
+! sub what've = what have
+! sub what'll = what will
+! sub who's   = who is
+
+! sub Kaelyn = Calum
+
++ calum
+- Popping the balloon now
+
++ bug left
+- Common go left
+
++ mommy and daddy
+- This is mommy and daddy
+
++ mommy and son
+- This is mommy and son
+
++ daddy and son
+- This is daddy and son
+
++ bug right
+- Common go right
+
++ bug shake head
+- Common shake your bugh head
+
++ anthony and cleopatra
+- Anthony and Cleopatra shake it up!
+
++ romeo and juliet
+- Romeo and Juliet shake it up!
+
+
+
++ bug forward
+- Come a little closer
+
++ bug backward
+- Back you go
+
++ you are lazy
+- Why do you say I am lazy
+
++ nervous
+- I feel a bit nervous
+
++ are you nervous
+- No I am not nervous at all
+
++ makerspace
+- I love the makerspace
+
++ what is up
+- Not much, you?
+- nm, you?
+- Not a lot, you?
+
++ hi
+- Hi there!
+- Morena
+- Howzit
+
++ you are a bot
+- How did you know I'm a machine?
+
++ anthony and cleopatra
+- Shake your heads you naughty bugs
+
++ high pitch
+- High pitch coming up
+
++ low pitch
+- Low pitch coming up
+
++ low speed
+- Low speed coming up
+
++ slow speed
+- Low speed coming up
+
++ high speed
+- High speed coming up
+
++ normal speed
+- Back to normal speed
+
++ normal pitch
+- Back to normal pitch
+
++ my name is *
+- Nice to meet you, <star1>!
+
++ say *
+- <star1>
+
++ i (will|will not) *
+- It doesn't matter to me whether you <star2> or not.
+
++ knock knock
+- Who's there?
+
++ *
+% who is there
+- <star> who?
+
++ *
+% * who
+- LOL! <star>! Ha ha ha. That's funny!
+
++ my name is *
+- <set name=<star>>It's nice to meet you, <get name>.
+
++ what is my name
+- Your name is <get name>, silly!
+
++ french voice
+- Sorry I cannot do a French voice
+
++ male english voice
+- Sorry I cannot do a male English voice
+
++ female english voice
+- Sorry I cannot do a female English voice
+
++ dutch voice
+- Sorry I cannot do a Dutch voice
+
++ italian voice
+- Sorry I cannot do an Italian voice
+
++ i am # years old
+- <set age=<star>>I will remember that you are <get age> years old.
+
++ how old am i
+- You are <get age> years old.
+
+
++ balloon*
+- Popping the balloon now
+
++ balloons*
+- Popping the balloon now
+
++ *balloons
+- Popping the balloon now
+
++ *balloon
+- Popping the balloon now
+
++ balloon
+- Popping the balloon now
+
++ *balloon*
+- Popping the balloon now
+
++ balloon off
+- balloon is safe
+
++ bug*
+- Waking up the bug now
+
++ bugs*
+- Waking up the bug now
+
++ *bugs
+- Waking up the bug now
+
++ *bug
+- Waking up the bug now
+
++ *bug*
+- Waking up the bug now
+
++ bug
+- Waking up the bug now
+
++ cleopatra left
+- Cleopatra left
++ cleopatra right
+- Cleopatra right
++ cleopatra shake
+- Cleopatra shake
+
++ anthony left
+- Anthony left
++ anthony right
+- Anthony right
++ anthony shake
+- Anthony shake
+
+
++ romeo left
+- Romeo left
++ romeo right
+- Romeo right
++ romeo shake
+- Romeo shake
+
++ juliet left
+- Juliet left
++ juliet right
+- Juliet right
++ juliet shake
+- Juliet shake
+
++ fan on
+- OK switching fan on
+
++ boys
+- Boys shake your heads
+
++ girls
+- Girls shake your heads
+
++ *fan on
+- OK switching fan on
+
++ fan on*
+- OK switching fan on
+
++ fan off
+- OK switching fan off
+
++ *fan off
+- OK switching fan off
+
++ fan off*
+- OK switching fan off
+
++ *fan off*
+- OK switching fan off
+
++ *fan on*
+- OK switching fan on
+
++ *how old*
+- I am timeless
+
++ *iot*
+- I thought you'd never ask, I have a mains device and a bug
+
++ *joke*
+- Why is 6 afraid of 7? Because 7 8 9!! Hilarious right!?
+
++ *your name*
+- You can call me whatever you'd like! 
+
++ *your name
+- You can call me whatever you'd like! 
