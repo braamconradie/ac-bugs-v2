@@ -45,7 +45,8 @@ const form = document.querySelector('form');
 const input_box = document.querySelector('input');
 
 function preload() {
-  vid = createVideo("https://cdn.glitch.com/a69fa2b3-1e85-49bf-9139-6e685f1a3776%2F10secShia.mp4");  
+  //vid = createVideo("https://cdn.glitch.com/a69fa2b3-1e85-49bf-9139-6e685f1a3776%2F10secShia.mp4");  
+  vid = createVideo("https://www.youtube.com/watch?v=Z9TCn-SBNOI"); 
   
 
   vid.hide();  
